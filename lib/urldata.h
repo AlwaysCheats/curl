@@ -1457,7 +1457,8 @@ struct UrlState {
   BIT(stream_depends_e); /* set or don't set the Exclusive bit */
   BIT(previouslypending); /* this transfer WAS in the multi->pending queue */
   BIT(cookie_engine);
-  BIT(prefer_ascii);     /* ASCII rather than binary */
+  BIT(prefer_ascii);   /* ASCII rather than binary */
+  BIT(list_only);      /* list directory contents */
 };
 
 
@@ -1798,7 +1799,7 @@ struct UserDefined {
   BIT(tunnel_thru_httpproxy); /* use CONNECT through a HTTP proxy */
   BIT(prefer_ascii);     /* ASCII rather than binary */
   BIT(ftp_append);       /* append, not overwrite, on upload */
-  BIT(ftp_list_only);    /* switch FTP command for listing directories */
+  BIT(list_only);        /* list directory */
 #ifndef CURL_DISABLE_FTP
   BIT(ftp_use_port);     /* use the FTP PORT command */
   BIT(ftp_use_epsv);     /* if EPSV is to be attempted or not */
