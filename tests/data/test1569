@@ -27,7 +27,7 @@ REPLY EPSV 500 no such command
 ftp
 </server>
  <name>
-FTP RETR PASV
+FTP first type=A then regular URL
  </name>
 <tool>
 lib1569
